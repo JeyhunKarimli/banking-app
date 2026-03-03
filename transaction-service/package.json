@@ -1,0 +1,25 @@
+{
+  "name": "transaction-service",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf ./node_modules ./dist",
+    "build": "tsc",
+    "ts-node": "nodemon",
+    "dev": "yarn prepare && concurrently \"yarn watch\" \"yarn start\""
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mongoose": "^8.7.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "concurrently": "^9.0.1",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "proxy-service",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf ./node_modules ./dist",
+    "build": "tsc",
+    "ts-node": "nodemon",
+    "dev": "yarn prepare && concurrently \"yarn watch\" \"yarn start\""
+  },
+  "dependencies": {
+    "@types/http-proxy-middleware": "^1.0.0",
+    "@types/node": "^22.7.4",
+    "concurrently": "^9.0.1",
+    "express": "^4.21.1",
+    "http-proxy-middleware": "^3.0.3",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/sharp": "^0.32.0",
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.7",
+    "typescript": "^5.6.3"
+ }
+}
